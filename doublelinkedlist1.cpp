@@ -185,6 +185,12 @@ public:
             cout << "\nList is empty" << endl;
             return;
         }
+
+        int rollNo;
+        cout << "\nEnter the roll number to search: ";
+        cin >> rollNo;
+
+        Node *current = START;
+
     }
 };
- 
