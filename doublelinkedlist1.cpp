@@ -10,3 +10,16 @@ public:
     Node *prev;
 };
 
+class doublelinkedlist
+{
+private:
+    Node *START;
+    
+public:
+    doublelinkedlist()
+    {
+        START=NULL;
+
+    }
+    
+};
