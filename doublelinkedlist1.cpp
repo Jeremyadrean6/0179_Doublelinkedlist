@@ -157,5 +157,34 @@ public:
         return;
        }
 
+       //Step 1: Move to last Node
+       Node *currentNode = START;
+       int i = 0;
+       while (currentNode->next != NULL)
+       {
+        currentNode = currentNode->next;
+        i++;
+       }
+
+       //Step 2: traverse backward
+       cout << "\nBecode in descending order of roll number are:\n";
+       while (currentNode != NULL)
+       {
+        cout << i + 1 << ". " << currentNode->noMhs << " " << endl;
+
+        // Step 3: Move to previous node 
+        currentNode = currentNode->prev;
+        i--;
+       } 
+    }
+
+    void searchdata()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
     }
 };
+ 
