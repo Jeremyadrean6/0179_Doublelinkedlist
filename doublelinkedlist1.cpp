@@ -192,5 +192,20 @@ public:
 
         Node *current = START;
 
+        // Step 1: Traverse to find matching roll number
+        while (current != NULL && current->noMhs != rollNo)   
+            current = current->next;
+    
+        // Step 2: Output result
+        if (current == NULL)
+        {
+            cout << "record not found\n";
+        }
+        else
+        {
+            cout << "record found\n";
+            cout << "roll number: " << current-> noMhs << endl;
+        }
     }
 };
+
